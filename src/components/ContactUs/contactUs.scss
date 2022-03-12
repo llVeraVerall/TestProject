@@ -1,0 +1,104 @@
+$color1: rgb(190, 195, 199);
+$color2: rgb(68, 68, 68);
+$color3: rgb(255, 255, 255);
+$color4: rgb(27, 188, 155);
+$color5: rgb(236, 240, 241);
+
+.contact__block {
+  background-color: $color5;
+  padding: 60px 30px;
+}
+
+.contact__tite {
+  font-size: 28px;
+  font-family: "Lato";
+  color: $color2;
+  line-height: 1.2;
+  text-align: center;
+  .contact__text {
+    font-size: 14px;
+  }
+}
+
+.input__name,
+.input__email {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $color1;
+  background-color: $color3;
+  width: 224px;
+  height: 51px;
+  margin: 2%;
+}
+
+.massage {
+  outline: none;
+  resize: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $color1;
+  background-color: $color3;
+  width: 492px;
+  height: 160px;
+  margin-left: 2%;
+  font-family: "Lato";
+  line-height: 1.2;
+}
+
+.contact__button {
+  border: none;
+  outline: none;
+  background-color: $color4;
+  width: 114px;
+  height: 37px;
+  color: $color3;
+  padding: 0 30px;
+  margin-left: 42%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.map {
+  display: flex;
+  justify-content: end;
+  margin-top: -280px;
+}
+
+@media (max-width: 425px) {
+  .contact__block,
+  .contact__tite {
+    display: flex;
+    flex-direction: column;
+    .map {
+      margin: auto;
+    }
+  }
+  .massage,
+  .input__name,
+  .input__email {
+    width: 80%;
+    margin-left: 30px;
+  }
+  .contact__button {
+    margin: 20px 0 20px 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__block,
+  .contact__tite {
+    display: flex;
+    flex-direction: column;
+    .map {
+      // margin: -360px 0 0 30px;
+      margin: auto;
+    }
+  }
+  .massage,
+  .input__name,
+  .input__email {
+    width: 45%;
+    margin-left: 30px;
+  }
+}

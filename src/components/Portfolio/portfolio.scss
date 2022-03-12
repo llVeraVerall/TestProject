@@ -1,0 +1,123 @@
+$color1: rgb(68, 68, 68);
+$color2: rgb(27, 188, 155);
+$color3: #ffffff;
+
+.portfolio__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 28px;
+  font-family: "Lato";
+  color: $color1;
+  .portfolio__text {
+    margin: 20px;
+    font-size: 18px;
+  }
+}
+
+.portfolio__nav {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: bold;
+  ul {
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+    li {
+      margin-right: 15px;
+      background-color: $color2;
+      color: $color3;
+      padding: 15px;
+      &:hover {
+        background-color: rgb(22, 160, 134);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.icon {
+  width: 175px;
+  height: 180px;
+  background-repeat: repeat-y;
+  margin: 20%;
+  &:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgb(22, 160, 134);
+    opacity: 0.5;
+    background-image: url("../../assets/icons/search.png");
+  }
+}
+
+.portfolio__icons {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.icon1 {
+  background-image: url("../../assets/icons/img-1.png");
+  @extend.icon;
+}
+
+.icon2 {
+  background-image: url("../../assets/icons/img-2.png");
+  @extend.icon;
+}
+
+.icon3 {
+  background-image: url("../../assets/icons/img-3.png");
+  @extend.icon;
+}
+
+.icon4 {
+  background-image: url("../../assets/icons/img-4.png");
+  @extend.icon;
+}
+
+.icon5 {
+  background-image: url("../../assets/icons/img-5.png");
+  @extend.icon;
+}
+
+.icon6 {
+  background-image: url("../../assets/icons/img-6.png");
+  @extend.icon;
+}
+
+.icon7 {
+  background-image: url("../../assets/icons/img-1.png");
+  @extend.icon;
+}
+
+.icon8 {
+  background-image: url("../../assets/icons/img-2.png");
+  @extend.icon;
+}
+
+@media (max-width: 320px) {
+  .icon {
+    width: 160px;
+    height: 170px;
+  }
+}
+
+@media (max-width: 425px) {
+  .portfolio__icons {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .icon {
+    margin: 10px 0;
+  }
+  .portfolio__nav {
+    font-size: 10px;
+
+    ul {
+      margin: 0;
+    }
+  }
+}

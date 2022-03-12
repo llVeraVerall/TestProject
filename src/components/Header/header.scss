@@ -1,0 +1,82 @@
+$color1: #ffffff;
+$color2: #444444;
+$color3: #1bbc9b;
+
+.header__content {
+  color: $color2;
+  // width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.header__logo {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/img/b-logo.svg.png");
+}
+
+.header__title {
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Lato";
+  font-weight: bold;
+  line-height: 1.2;
+  .header__text {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+}
+
+.logo__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  ul {
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+    li {
+      color: $color2;
+      padding: 15px;
+      &:hover {
+        background-color: $color3;
+        color: $color1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.menu {
+  margin: 0;
+}
+
+.li__title {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 320px) {
+  ul.menu {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header__content {
+    flex-direction: column;
+  }
+  ul.menu {
+    padding: 0;
+  }
+  .header__logo {
+    margin-right: 10%;
+  }
+}

@@ -1,0 +1,85 @@
+$color1: rgb(255, 255, 255);
+$color2: rgb(68, 68, 68);
+
+.about__content {
+  background-color: #16a086;
+  padding-bottom: 70px;
+}
+
+.about__tite {
+  font-size: 28px;
+  font-family: "Lato";
+  color: $color1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  .about__text {
+    margin: 20px;
+    font-size: 18px;
+  }
+}
+
+.about__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about__card {
+  width: 220px;
+  background-color: $color1;
+  //height: 480px;
+}
+
+.card__title {
+  font-size: 18px;
+  font-family: "Lato";
+  color: $color2;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 20px;
+  .card__subtitle {
+    font-size: 14px;
+    font-style: italic;
+  }
+  .card__text {
+    font-size: 14px;
+    line-height: 1.429;
+    text-align: left;
+    padding: 10px;
+  }
+}
+
+.card__img {
+  z-index: 2;
+  &:hover {
+    background-color: #16a086;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+
+// .card__options {
+//   width: 100px;
+//   height: 40px;
+//   background-color: #16a086;
+//   visibility: hidden;
+
+//   color: black;
+//   &:hover {
+//     //background-image: url('');
+//     visibility: visible;
+//     cursor: pointer;
+//   }
+// }
+
+@media (max-width: 425px) {
+  .about__cards {
+    display: block;
+    margin: 0 25%;
+  }
+  .about__card {
+    margin-bottom: 40px;
+  }
+}
