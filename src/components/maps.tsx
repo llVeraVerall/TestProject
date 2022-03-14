@@ -2,7 +2,7 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
 export const BlaBlaMap = () => {
 const mapData = {
-   center: [55.798682, 37.695816], zoom: 11,
+   center: [55.798682, 37.695816], zoom: 16,
 };
 const coordinates = [
   [55.798682, 37.695816]
