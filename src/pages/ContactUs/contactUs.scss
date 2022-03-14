@@ -20,6 +20,11 @@ $color5: rgb(236, 240, 241);
   }
 }
 
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .input__name,
 .input__email {
   border-style: solid;
@@ -31,6 +36,11 @@ $color5: rgb(236, 240, 241);
   margin: 2%;
 }
 
+.input__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .massage {
   outline: none;
   resize: none;
@@ -40,11 +50,9 @@ $color5: rgb(236, 240, 241);
   background-color: $color3;
   width: 492px;
   height: 160px;
-  margin-left: 2%;
+  margin: 2%;
   font-family: "Lato";
-  line-height: 1.2;
 }
-
 .contact__button {
   border: none;
   outline: none;
@@ -53,16 +61,15 @@ $color5: rgb(236, 240, 241);
   height: 37px;
   color: $color3;
   padding: 0 30px;
-  margin-left: 42%;
+  margin-left: 40%;
   cursor: pointer;
-  display: flex;
-  align-items: center;
+  // margin: 0 0 0 40%;
 }
 
 .map {
   display: flex;
   justify-content: end;
-  margin-top: -280px;
+  margin-top: -300px;
 }
 
 @media (max-width: 425px) {
